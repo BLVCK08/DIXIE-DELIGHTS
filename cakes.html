@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dixie Delight</title>
+    <link rel="stylesheet" href="C:\Users\lenovo\Documents\style.css">
+</head>
+<body>
+    <header>
+        <h1>Dixie Delight</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Our Cakes</h2>
+        <div class="cake-samples">
+            <div class="cake">
+                <img src="cake1.jpg" alt="Cake 1">
+                <p>Chocolate Delight</p>
+                <button onclick="orderCake('Chocolate Delight')">Order</button>
+            </div>
+            <div class="cake">
+                <img src="cake2.jpg" alt="Cake 2">
+                <p>Vanilla Dream</p>
+                <button onclick="orderCake('Vanilla Dream')">Order</button>
+            </div>
+            <!-- Add more cakes as needed -->
+        </div>
+    </section>
+
+    <section id="order">
+        <h2>Order Processing</h2>
+        <form id="order-form">
+            <label for="cake-name">Cake Name:</label>
+            <input type="text" id="cake-name" name="cake-name" readonly>
+            <label for="customer-name">Your Name:</label>
+            <input type="text" id="customer-name" name="customer-name" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
